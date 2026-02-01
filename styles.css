@@ -79,11 +79,10 @@ a:hover::before {
 }
 
 a:hover {
-	color: #00ff88;
-	border-color: #00ff88;
-	text-shadow: 0 0 15px #00ff88, 0 0 25px #ff006e;
+	/* preserve the link's color and border; use currentColor for glow */
+	text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
 	transform: scale(1.05);
-	box-shadow: 0 0 15px #00d9ff, inset 0 0 10px rgba(0, 255, 136, 0.2);
+	box-shadow: 0 0 15px currentColor, inset 0 0 10px rgba(255, 255, 255, 0.03);
 }
 
 li:nth-child(2) a {
@@ -93,9 +92,8 @@ li:nth-child(2) a {
 }
 
 li:nth-child(2) a:hover {
-	color: #00d9ff;
-	border-color: #00d9ff;
-	text-shadow: 0 0 15px #00d9ff, 0 0 25px #00ff88;
+	/* preserve the link's color; just add a glow using currentColor */
+	text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
 }
 
 li:nth-child(3) a {
@@ -105,9 +103,50 @@ li:nth-child(3) a {
 }
 
 li:nth-child(3) a:hover {
-	color: #ff006e;
-	border-color: #ff006e;
-	text-shadow: 0 0 15px #ff006e, 0 0 25px #00d9ff;
+	/* preserve the link's color; just add a glow using currentColor */
+	text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
+}
+
+/* green link (4th item) */
+.green {
+	border-color: #00ff88;
+	color: #00ff88;
+	text-shadow: 0 0 8px #00ff88;
+}
+
+.green:hover {
+	/* keep green as-is; use currentColor for glow */
+	text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
+	transform: scale(1.05);
+	box-shadow: 0 0 15px currentColor, inset 0 0 10px rgba(255, 255, 255, 0.03);
+}
+
+/* orange link */
+.orange {
+	border-color: #ffbd39;
+	color: #ffbd39;
+	text-shadow: 0 0 8px #ffbd39;
+}
+
+.orange:hover {
+	/* keep orange as-is; use currentColor for glow */
+	text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
+	transform: scale(1.05);
+	box-shadow: 0 0 15px currentColor, inset 0 0 10px rgba(255, 255, 255, 0.03);
+}
+
+/* purple link */
+.purple {
+	border-color: #ce59ff;
+	color: #ce59ff;
+	text-shadow: 0 0 8px #ce59ff;
+}
+
+.purple:hover {
+	/* keep purple as-is; use currentColor for glow */
+	text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
+	transform: scale(1.05);
+	box-shadow: 0 0 15px currentColor, inset 0 0 10px rgba(255, 255, 255, 0.03);
 }
 
 .footer {
@@ -117,7 +156,33 @@ li:nth-child(3) a:hover {
 	letter-spacing: 1px;
 }
 
-.scanlines {
+.social {
+	margin-top: 12px;
+	display: flex;
+	gap: 18px;
+	justify-content: center;
+	align-items: center;
+}
+
+.plain {
+	color: #bfbfbf;
+	text-decoration: none;
+	font-size: 0.95em;
+	padding: 6px 8px;
+	border: none;
+	text-shadow: none;
+	transition: color 0.2s ease, transform 0.12s ease;
+}
+
+.plain:hover {
+	color: #ffffff;
+	transform: translateY(-2px);
+	text-shadow: 0 0 6px rgba(255, 255, 255, 0.08);
+}
+
+/* scanline effect */
+body::before {
+	content: "";
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -129,7 +194,7 @@ li:nth-child(3) a:hover {
 			rgba(0, 0, 0, 0.1) 1px,
 			transparent 1px,
 			transparent 2px);
-	z-index: -1;
+	z-index: 2;
 }
 
 @keyframes glow {
