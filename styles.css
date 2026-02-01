@@ -79,12 +79,11 @@ a:hover::before {
 }
 
 a:hover {
-	color: #00ff88;
-	border-color: #00ff88;
-	text-shadow: 0 0 15px #00ff88, 0 0 25px #ff006e;
+	/* preserve the link's color and border; use currentColor for glow */
+	text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
 	transform: scale(1.05);
-	box-shadow: 0 0 15px #00d9ff, inset 0 0 10px rgba(0, 255, 136, 0.2);
-}
+	box-shadow: 0 0 15px currentColor, inset 0 0 10px rgba(255,255,255,0.03);
+} 
 
 li:nth-child(2) a {
 	border-color: #ff006e;
@@ -93,10 +92,9 @@ li:nth-child(2) a {
 }
 
 li:nth-child(2) a:hover {
-	color: #00d9ff;
-	border-color: #00d9ff;
-	text-shadow: 0 0 15px #00d9ff, 0 0 25px #00ff88;
-}
+	/* preserve the link's color; just add a glow using currentColor */
+	text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
+} 
 
 li:nth-child(3) a {
 	border-color: #ffbd39;
@@ -105,10 +103,9 @@ li:nth-child(3) a {
 }
 
 li:nth-child(3) a:hover {
-	color: #ff006e;
-	border-color: #ff006e;
-	text-shadow: 0 0 15px #ff006e, 0 0 25px #00d9ff;
-}
+	/* preserve the link's color; just add a glow using currentColor */
+	text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
+} 
 
 /* green link (4th item) */
 .green {
@@ -118,12 +115,11 @@ li:nth-child(3) a:hover {
 }
 
 .green:hover {
-	color: #00ff88;
-	border-color: #00ff88;
-	text-shadow: 0 0 15px #00ff88, 0 0 25px #00d9ff;
+	/* keep green as-is; use currentColor for glow */
+	text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
 	transform: scale(1.05);
-	box-shadow: 0 0 15px #00ff88, inset 0 0 10px rgba(0, 255, 136, 0.2);
-}
+	box-shadow: 0 0 15px currentColor, inset 0 0 10px rgba(255,255,255,0.03);
+} 
 
 /* orange link */
 .orange {
@@ -133,12 +129,11 @@ li:nth-child(3) a:hover {
 }
 
 .orange:hover {
-	color: #ff006e;
-	border-color: #ff006e;
-	text-shadow: 0 0 15px #ff006e, 0 0 25px #00d9ff;
+	/* keep orange as-is; use currentColor for glow */
+	text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
 	transform: scale(1.05);
-	box-shadow: 0 0 15px #ffbd39, inset 0 0 10px rgba(255, 189, 57, 0.15);
-}
+	box-shadow: 0 0 15px currentColor, inset 0 0 10px rgba(255,255,255,0.03);
+} 
 
 /* purple link */
 .purple {
@@ -148,11 +143,10 @@ li:nth-child(3) a:hover {
 }
 
 .purple:hover {
-	color: #cda6ff;
-	border-color: #cda6ff;
-	text-shadow: 0 0 15px #cda6ff, 0 0 25px #00d9ff;
+	/* keep purple as-is; use currentColor for glow */
+	text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
 	transform: scale(1.05);
-	box-shadow: 0 0 15px #8a2be2, inset 0 0 10px rgba(138, 43, 226, 0.15);
+	box-shadow: 0 0 15px currentColor, inset 0 0 10px rgba(255,255,255,0.03);
 }
 
 .footer {
