@@ -125,6 +125,21 @@ li:nth-child(3) a:hover {
 	box-shadow: 0 0 15px #00ff88, inset 0 0 10px rgba(0, 255, 136, 0.2);
 }
 
+/* orange link */
+.orange {
+	border-color: #ffbd39;
+	color: #ffbd39;
+	text-shadow: 0 0 8px #ffbd39;
+}
+
+.orange:hover {
+	color: #ff006e;
+	border-color: #ff006e;
+	text-shadow: 0 0 15px #ff006e, 0 0 25px #00d9ff;
+	transform: scale(1.05);
+	box-shadow: 0 0 15px #ffbd39, inset 0 0 10px rgba(255, 189, 57, 0.15);
+}
+
 .footer {
 	margin-top: 60px;
 	font-size: 0.8em;
