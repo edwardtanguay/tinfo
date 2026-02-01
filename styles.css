@@ -147,19 +147,36 @@ li:nth-child(3) a:hover {
 	letter-spacing: 1px;
 }
 
-.scanlines {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	pointer-events: none;
-	background: repeating-linear-gradient(0deg,
-			rgba(0, 0, 0, 0.1),
-			rgba(0, 0, 0, 0.1) 1px,
-			transparent 1px,
-			transparent 2px);
-	z-index: -1;
+.social {
+	margin-top: 12px;
+	display: flex;
+	gap: 18px;
+	justify-content: center;
+	align-items: center;
+}
+
+.plain {
+	color: #bfbfbf;
+	text-decoration: none;
+	font-size: 0.95em;
+	padding: 6px 8px;
+	border: none;
+	text-shadow: none;
+	transition: color 0.2s ease, transform 0.12s ease;
+}
+
+.plain:hover {
+	color: #ffffff;
+	transform: translateY(-2px);
+	text-shadow: 0 0 6px rgba(255, 255, 255, 0.08);
+}
+
+background: repeating-linear-gradient(0deg,
+	rgba(0, 0, 0, 0.1),
+	rgba(0, 0, 0, 0.1) 1px,
+	transparent 1px,
+	transparent 2px);
+z-index: -1;
 }
 
 @keyframes glow {
