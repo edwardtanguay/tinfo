@@ -137,9 +137,9 @@ li:nth-child(3) a:hover {
 
 /* purple link */
 .purple {
-	border-color: #8a2be2;
-	color: #8a2be2;
-	text-shadow: 0 0 8px #8a2be2;
+	border-color: #ce59ff;
+	color: #ce59ff;
+	text-shadow: 0 0 8px #ce59ff;
 }
 
 .purple:hover {
