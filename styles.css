@@ -82,8 +82,8 @@ a:hover {
 	/* preserve the link's color and border; use currentColor for glow */
 	text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
 	transform: scale(1.05);
-	box-shadow: 0 0 15px currentColor, inset 0 0 10px rgba(255,255,255,0.03);
-} 
+	box-shadow: 0 0 15px currentColor, inset 0 0 10px rgba(255, 255, 255, 0.03);
+}
 
 li:nth-child(2) a {
 	border-color: #ff006e;
@@ -94,7 +94,7 @@ li:nth-child(2) a {
 li:nth-child(2) a:hover {
 	/* preserve the link's color; just add a glow using currentColor */
 	text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
-} 
+}
 
 li:nth-child(3) a {
 	border-color: #ffbd39;
@@ -105,7 +105,7 @@ li:nth-child(3) a {
 li:nth-child(3) a:hover {
 	/* preserve the link's color; just add a glow using currentColor */
 	text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
-} 
+}
 
 /* green link (4th item) */
 .green {
@@ -118,8 +118,8 @@ li:nth-child(3) a:hover {
 	/* keep green as-is; use currentColor for glow */
 	text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
 	transform: scale(1.05);
-	box-shadow: 0 0 15px currentColor, inset 0 0 10px rgba(255,255,255,0.03);
-} 
+	box-shadow: 0 0 15px currentColor, inset 0 0 10px rgba(255, 255, 255, 0.03);
+}
 
 /* orange link */
 .orange {
@@ -132,8 +132,8 @@ li:nth-child(3) a:hover {
 	/* keep orange as-is; use currentColor for glow */
 	text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
 	transform: scale(1.05);
-	box-shadow: 0 0 15px currentColor, inset 0 0 10px rgba(255,255,255,0.03);
-} 
+	box-shadow: 0 0 15px currentColor, inset 0 0 10px rgba(255, 255, 255, 0.03);
+}
 
 /* purple link */
 .purple {
@@ -146,7 +146,7 @@ li:nth-child(3) a:hover {
 	/* keep purple as-is; use currentColor for glow */
 	text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
 	transform: scale(1.05);
-	box-shadow: 0 0 15px currentColor, inset 0 0 10px rgba(255,255,255,0.03);
+	box-shadow: 0 0 15px currentColor, inset 0 0 10px rgba(255, 255, 255, 0.03);
 }
 
 .footer {
