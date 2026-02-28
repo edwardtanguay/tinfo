@@ -152,7 +152,7 @@ li:nth-child(3) a:hover {
 .section-title {
 	color: #999;
 	font-size: 1em;
-	margin-top: 40px;
+	margin-top: 4rem;
 	margin-bottom: 20px;
 	text-shadow: none;
 	letter-spacing: 2px;
@@ -180,36 +180,39 @@ li:nth-child(3) a:hover {
 
 .small-list a {
 	font-size: 0.75em;
-	padding: 5px;
+	padding: 2px 8px;
 	border: none;
-	color: #888;
+	color: #0a0e27 !important;
 	text-shadow: none;
 	text-transform: lowercase;
 	letter-spacing: 1px;
+	font-weight: bold;
+	display: inline-block;
 }
 
 .small-list li:nth-child(1) a {
-	color: #bbbbbb;
+	background-color: #bbbbbb;
 }
 
 .small-list li:nth-child(2) a {
-	color: #d0d0d0;
+	background-color: #d0d0d0;
 }
 
 .small-list li:nth-child(3) a {
-	color: #e0e0e0;
+	background-color: #e0e0e0;
 }
 
 .small-list li:nth-child(4) a {
-	color: #cccccc;
+	background-color: #cccccc;
 }
 
 .small-list a:hover {
-	color: #ffffff;
+	background-color: #ffffff;
+	color: #000000 !important;
 	text-decoration: none;
-	transform: none;
-	box-shadow: none;
-	text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+	transform: scale(1.02);
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+	text-shadow: none;
 }
 
 .footer {
