@@ -191,23 +191,39 @@ li:nth-child(3) a:hover {
 }
 
 .small-list li:nth-child(1) a {
-	background-color: #bbbbbb;
+	background-color: #888;
 }
 
 .small-list li:nth-child(2) a {
-	background-color: #d0d0d0;
+	background-color: #999;
 }
 
 .small-list li:nth-child(3) a {
-	background-color: #e0e0e0;
+	background-color: #aaa;
 }
 
 .small-list li:nth-child(4) a {
-	background-color: #cccccc;
+	background-color: #777;
+}
+
+.small-list li:nth-child(5) a {
+	background-color: #bbb;
+}
+
+.small-list li:nth-child(6) a {
+	background-color: #959595;
+}
+
+.small-list li:nth-child(7) a {
+	background-color: #a5a5a5;
+}
+
+.small-list li:nth-child(8) a {
+	background-color: #8f8f8f;
 }
 
 .small-list a:hover {
-	background-color: #ffffff;
+	background-color: #ccc;
 	color: #000000 !important;
 	text-decoration: none;
 	transform: scale(1.02);
