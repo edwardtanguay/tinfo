@@ -175,12 +175,12 @@ li:nth-child(3) a:hover {
 }
 
 .small-list li {
-	margin: 10px 0;
+	margin: 15px 0;
 }
 
 .small-list a {
-	font-size: 0.75em;
-	padding: 2px 8px;
+	font-size: 1em;
+	padding: 4px 12px;
 	border: none;
 	color: #0a0e27 !important;
 	text-shadow: none;
