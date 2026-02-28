@@ -150,7 +150,7 @@ li:nth-child(3) a:hover {
 }
 
 .section-title {
-	color: #666;
+	color: #999;
 	font-size: 0.75em;
 	margin-top: 40px;
 	margin-bottom: 20px;
@@ -181,18 +181,18 @@ li:nth-child(3) a:hover {
 	font-size: 0.75em;
 	padding: 5px;
 	border: none;
-	color: #444;
+	color: #777;
 	text-shadow: none;
 	text-transform: lowercase;
 	letter-spacing: 1px;
 }
 
 .small-list a:hover {
-	color: #888;
-	text-decoration: underline;
+	color: #eee;
+	text-decoration: none;
 	transform: none;
 	box-shadow: none;
-	text-shadow: none;
+	text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
 .footer {
