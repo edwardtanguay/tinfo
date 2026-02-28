@@ -149,6 +149,30 @@ li:nth-child(3) a:hover {
 	box-shadow: 0 0 15px currentColor, inset 0 0 10px rgba(255, 255, 255, 0.03);
 }
 
+.section-title {
+	color: #ff006e;
+	font-size: 0.9em;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	text-shadow: 0 0 5px #ff006e;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.small-list {
+	margin: 20px 0;
+}
+
+.small-list li {
+	margin: 10px 0;
+}
+
+.small-list a {
+	font-size: 0.9em;
+	padding: 5px 15px;
+	border: 1px solid #00d9ff;
+}
+
 .footer {
 	margin-top: 60px;
 	font-size: 0.8em;
