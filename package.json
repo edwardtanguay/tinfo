@@ -1,0 +1,21 @@
+{
+  "name": "tinfo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gh": "git log --pretty=format:\"%ad | %h | %s\" --date=format:\"%Y-%m-%d %H:%M:%S\"",
+    "backup": "bash -c 'git archive --format=zip HEAD -o \"../BACKUP/tinfo-$(date +%F-%H-%M-%S).zip\"'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwardtanguay/tinfo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edwardtanguay/tinfo/issues"
+  },
+  "homepage": "https://github.com/edwardtanguay/tinfo#readme"
+}

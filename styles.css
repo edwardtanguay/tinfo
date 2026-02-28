@@ -150,13 +150,20 @@ li:nth-child(3) a:hover {
 }
 
 .section-title {
-	color: #ff006e;
-	font-size: 0.9em;
-	margin-top: 60px;
+	color: #666;
+	font-size: 0.75em;
+	margin-top: 40px;
 	margin-bottom: 20px;
-	text-shadow: 0 0 5px #ff006e;
+	text-shadow: none;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+}
+
+.separator {
+	border: 0;
+	border-top: 1px dashed #333;
+	margin-top: 60px;
+	width: 100%;
 }
 
 .small-list {
@@ -168,9 +175,17 @@ li:nth-child(3) a:hover {
 }
 
 .small-list a {
-	font-size: 0.9em;
-	padding: 5px 15px;
-	border: 1px solid #00d9ff;
+	font-size: 0.8em;
+	padding: 4px 12px;
+	border: 1px solid #333;
+	color: #666;
+	text-shadow: none;
+}
+
+.small-list a:hover {
+	color: #00d9ff;
+	border-color: #00d9ff;
+	text-shadow: 0 0 8px #00d9ff;
 }
 
 .footer {
