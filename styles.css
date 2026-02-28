@@ -161,8 +161,11 @@ li:nth-child(3) a:hover {
 
 .separator {
 	border: 0;
-	border-top: 1px dashed #333;
-	margin-top: 60px;
+	border-top: 1px solid #222;
+	border-bottom: 1px solid #222;
+	height: 4px;
+	margin-top: 80px;
+	margin-bottom: 40px;
 	width: 100%;
 }
 
@@ -175,17 +178,21 @@ li:nth-child(3) a:hover {
 }
 
 .small-list a {
-	font-size: 0.8em;
-	padding: 4px 12px;
-	border: 1px solid #333;
-	color: #666;
+	font-size: 0.75em;
+	padding: 5px;
+	border: none;
+	color: #444;
 	text-shadow: none;
+	text-transform: lowercase;
+	letter-spacing: 1px;
 }
 
 .small-list a:hover {
-	color: #00d9ff;
-	border-color: #00d9ff;
-	text-shadow: 0 0 8px #00d9ff;
+	color: #888;
+	text-decoration: underline;
+	transform: none;
+	box-shadow: none;
+	text-shadow: none;
 }
 
 .footer {
