@@ -36,7 +36,20 @@
         </ul>
 
         <div class="footer">
-            &lt;&lt; Edward Tanguay &gt;&gt;
+            <div class="about-trigger" id="aboutTrigger">
+                <span class="bracket">&lt;&lt;</span>
+                <span class="name">Edward Tanguay</span>
+                <div class="avatar-peek">
+                    <img src="images/edward.png" alt="Edward">
+                    <span class="about-text">about</span>
+                </div>
+                <span class="bracket">&gt;&gt;</span>
+            </div>
+            
+            <div class="about-content" id="aboutContent">
+                <img src="images/edward.png" alt="Edward Tanguay">
+                <p>I've run 36 marathons, have a bachelors in philosophy, a masters in linguistics, speak numerous languages, have programmed computers since the 80s, this site is a link to all my projects, enjoy</p>
+            </div>
         </div>
         <div class="social">
             <a class="plain" href="https://www.linkedin.com/in/edward-tanguay">LinkedIn</a>
@@ -62,5 +75,14 @@
             <li><a href="https://jobs.tanguay.eu">[ 2021-2024 dev job site ]</a></li>
         </ul>
     </div>
+
+    <script>
+        const aboutTrigger = document.getElementById('aboutTrigger');
+        const aboutContent = document.getElementById('aboutContent');
+
+        aboutTrigger.addEventListener('click', () => {
+            aboutContent.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>
