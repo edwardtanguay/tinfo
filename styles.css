@@ -170,6 +170,73 @@ li:nth-child(3) a:hover {
 	width: 100%;
 }
 
+.other-list {
+	margin: 20px 0;
+}
+
+.other-list li {
+	margin: 15px 0;
+}
+
+.other-list a {
+	color: #00d9ff;
+	text-decoration: none;
+	font-size: 0.9em;
+	padding: 6px 12px;
+	border: 1px solid #00d9ff;
+	display: inline-block;
+	transition: all 0.3s ease;
+	text-shadow: 0 0 4px #00d9ff;
+	position: relative;
+	overflow: hidden;
+}
+
+.other-list a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, transparent, currentColor, transparent);
+	transition: left 0.5s ease;
+	opacity: 0.2;
+}
+
+.other-list a:hover::before {
+	left: 100%;
+}
+
+.other-list a:hover {
+	text-shadow: 0 0 10px currentColor, 0 0 15px currentColor;
+	transform: scale(1.03);
+	box-shadow: 0 0 10px currentColor, inset 0 0 5px rgba(255, 255, 255, 0.03);
+}
+
+.other-list li:nth-child(2) a {
+	border-color: #ff006e;
+	color: #ff006e;
+	text-shadow: 0 0 4px #ff006e;
+}
+
+.other-list li:nth-child(3) a {
+	border-color: #ffbd39;
+	color: #ffbd39;
+	text-shadow: 0 0 4px #ffbd39;
+}
+
+.other-list li:nth-child(4) a {
+	border-color: #00ff88;
+	color: #00ff88;
+	text-shadow: 0 0 4px #00ff88;
+}
+
+.other-list li:nth-child(5) a {
+	border-color: #ce59ff;
+	color: #ce59ff;
+	text-shadow: 0 0 4px #ce59ff;
+}
+
 .small-list {
 	margin: 20px 0;
 }
